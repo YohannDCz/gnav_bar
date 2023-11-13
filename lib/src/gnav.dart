@@ -45,7 +45,7 @@ class GNav extends StatefulWidget {
   final double tabBorderRadius;
   final double? iconSize;
   final Color? activeColor;
-  final Color backgroundColor;
+  final Gradient? backgroundColor;
   final Color tabBackgroundColor;
   final Color? color;
   final Color rippleColor;
@@ -122,10 +122,8 @@ class _GNavState extends State<GNav> {
                       haptic: widget.haptic,
                       leading: t.leading,
                       curve: widget.curve,
-                      backgroundGradient:
-                          t.backgroundGradient ?? widget.tabBackgroundGradient,
-                      backgroundColor:
-                          t.backgroundColor ?? widget.tabBackgroundColor,
+                      backgroundGradient: t.backgroundGradient ?? widget.tabBackgroundGradient,
+                      backgroundColor: t.backgroundColor ?? widget.tabBackgroundColor,
                       duration: widget.duration,
                       onPressed: () {
                         if (!clickable) return;
