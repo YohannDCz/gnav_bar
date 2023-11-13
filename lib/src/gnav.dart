@@ -19,7 +19,7 @@ class GNav extends StatefulWidget {
     this.color,
     this.rippleColor = Colors.transparent,
     this.hoverColor = Colors.transparent,
-    this.backgroundColor = Colors.transparent,
+    this.backgroundColor,
     this.tabBackgroundColor = Colors.transparent,
     this.tabBorderRadius = 100.0,
     this.iconSize,
@@ -90,7 +90,7 @@ class _GNavState extends State<GNav> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: widget.backgroundColor,
+        decoration: BoxDecoration(gradient: widget.backgroundColor),
         child: Row(
             mainAxisAlignment: widget.mainAxisAlignment,
             children: widget.tabs

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show HapticFeedback;
-import 'package:google_nav_bar/google_nav_bar.dart';
+import 'package:gnav_bar/google_nav_bar.dart';
 
 import 'button.dart';
 
